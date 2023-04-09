@@ -1,0 +1,49 @@
+/*-----------------slider---------------------*/
+body {
+    margin: 0;
+	padding: 0;
+	height: 100vh;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 79, 88);
+
+}
+.slider{
+	width:800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	
+}
+
+.botones{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slide input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;	
+
+}
+
+.slide img{
+	width: 800px;
+	height: 500px;
+}
+
+.manual-btn{
+    position: absolute;
+    display: flex;
+    border: 2px solid #0081a1;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+    justify-content: center;
+}
