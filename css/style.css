@@ -1,0 +1,98 @@
+/*Conf global*/
+/*PALETA DE COLORES #F6F1F1 (GRISALTO) #000000 (NEGRO)#146C94 (CELESTE LOGO) #19A7CE (SIMILTURQUEZA)*/
+*{
+    margin: 0;    /*establece el margen (espacio fuera del borde) de todos los elementos en 0.*/
+    padding: 0;   /*establece el relleno (espacio dentro del borde) de todos los elementos en 0.*/
+    box-sizing: border-box; /*especifica que el ancho y el alto de un elemento deben incluir el relleno y el borde, pero no el margen.*/
+    text-decoration: none; /*elimina cualquier subrayado u otras decoraciones de texto en los elementos.*/
+    font-family: Arial, sans-serif;  /*CHEQUIAR TIPOGRAFIA CON EL EQUIPO*/
+}
+
+body{
+    background: #ffffff; /*establece el color de fondo del elemento del cuerpo //CHEQUIAR FONDO CON EL EQUIPO*/
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color:#146C94;
+}
+
+.cabecera{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+/*CABECERA---establece el ancho máximo al 100 %, agrega un relleno de 10 píxeles a los lados izquierdo y derecho y centra el elemento horizontalmente configurando los márgenes izquierdo y derecho en automático.*/
+
+.logo{
+    float: left; /*se utiliza para colocar una imagen de logotipo a la izquierda*/
+    padding: 5px 30px 0; /*paddingde 5px en la parte superior, 10pxa la derecha y 0en la parte inferior.*/
+}
+.logo img{
+    height: 130px; /*tamañologo*/
+}
+
+
+.logo img:hover{
+	transform: scale(1.1);
+}
+
+.navegacion{
+	float: right;
+	width: auto;
+	margin: 30px auto;
+	
+}
+
+.navegacion ul{
+	list-style: none;
+	padding: 0  10px;
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	font-family: 'Open sans';
+	text-decoration: none;
+	text-transform: uppercase; /*texto en mayuscula*/
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 145%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	text-transform: uppercase; /*texto en mayuscula*/
+	text-align: left;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
