@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? family= Raleway:wght@300;400;700;800 & display=swap');
-
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
 *{
     margin: 0;    /*establece el margen (espacio fuera del borde) de todos los elementos en 0.*/
     padding: 0;   /*establece el relleno (espacio dentro del borde) de todos los elementos en 0.*/
@@ -99,4 +103,11 @@ header.abajo{
 .menu li:hover .submenu{
 	visibility: visible;
 	opacity: 1;
+}
+
+.contenerdor img{
+	max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+	background: #146C94;
 }
