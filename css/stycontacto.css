@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;    /*establece el margen (espacio fuera del borde) de todos los elementos en 0.*/
+    padding: 0;   /*establece el relleno (espacio dentro del borde) de todos los elementos en 0.*/
+    box-sizing: border-box; /*especifica que el ancho y el alto de un elemento deben incluir el relleno y el borde, pero no el margen.*/
+     /*elimina cualquier subrayado u otras decoraciones de texto en los elementos.*/
+	/*CHEQUIAR TIPOGRAFIA CON EL EQUIPO*/
+}
+
+
+/* Adri a partir de aca coloca el css del contenedor del banner*/
+
+
+
+
+
+h3{ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    size: 10cap;
+}
+
+
+
+
+.form-register{
+    width: 750px;
+    background: rgb(6, 201, 236);
+    padding: 30px;
+    font: 100;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 6%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(6, 29, 236);
+    }
+    
+    .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+    } 
+    
+    .controls{
+    width: 100%; ;
+    background-color: #e9e0db;
+    padding:20px;
+    border-radius:4px;
+    margin-bottom:16px;
+    border: 1px;
+    }
+    .comando {
+        width: 100%;
+        height: 150px;
+        background-color: #e9e0db;
+        padding:10px;
+        border-radius:14px;
+        position: relative;
+        margin-bottom:22px;
+        border:3px;
+    }
+    
+    .form-register .botons{
+    width: 40%;
+    background-color: #e78d06;
+    position:relative;right: 30%;
+    border: none;
+    padding: 10px;
+    }
+    
+    .alinear {
+        width: 250px;
+        height: 250px;
+        margin: 0 5px;
+        }
+        
+        .conteiner{
+         display: flex;
+         justify-content: center;
+        
+        }
+        
+        @media (max-whit:900px) {
+            .conteiner{
+                flex-direction: column;
+                align-items: center;}
+        
+        }
+        
+        .alinear {
+            margin-bottom:10px;
+        }
+    
+    
