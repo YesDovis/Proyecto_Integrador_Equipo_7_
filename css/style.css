@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Raleway:wght@300;400;700;800 & display=swap');
+
 @media (max-width: 600px) {
   .facet_sidebar {
     display: none;
@@ -117,16 +118,118 @@ header.abajo{
 
 
 
+/*  ===================
+    About Us - Nosotros
+    ===================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.about-us {
+    height: 100vh;
+    background-color: rgb(201, 199, 199);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-us{
+    width: 1000px;
+    margin: auto;
+    height: 600px;
+    background-color: white;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.text-block {
+    width: 45%;
+    font-family: 'Poppins';
+}
+
+.text-block .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.text-block .sub-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #003ca3;
+    margin-bottom: 1.3rem;
+}
+
+.text-block p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.btn-contacto {
+    border: 1px solid #003ca3;
+    color: #003ca3;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-contacto:hover {
+    color: white;
+    background-color: #003ca3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.about-us img {
+    position: absolute;
+    top: 16%;
+    right: -15%;
+    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    filter: contrast(150%);
+}
+
+/*  ****** FIN: ABOUT US ****** */
+
+/* RESPONSIVE: About Us*/
+
+@media only screen and (max-width: 768px)
+{
+    .container-us{
+        width: 90%;
+    }
+    .container-us .text-block{
+        width: 100%;
+    }
+    .container-us img{
+        display: none;
+    }
+}
+
+/* FIN Responsive - About Us */
 
 
-
-/* CSS de TARJETAS de SERVICIOS */
+/*  ===================
+    SERVICIOS - Tarjetas
+    ===================
+*/
+.section-servicios {
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Poppins';
+}
 
 .titulo-servicios {
-    background-color: black;
-    color: white;
-    justify-content: center;
-    padding: 20px;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+    display: block;
 }
 
 .fila{
@@ -141,7 +244,7 @@ header.abajo{
 }
 
 .tarjeta {
-    background: linear-gradient(white 50%, var(--bs-orange)50%);
+    background: linear-gradient(white 50%, #003ca3 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
@@ -153,7 +256,7 @@ header.abajo{
 }
 
 .rounded-wrapper {
-    background-color: var(--bs-orange);
+    background-color: #003ca3;
     position: relative;
     margin: auto;
     font-size: 1.5em;
@@ -175,7 +278,7 @@ header.abajo{
 .card-title {
     font-size: 1.5em;
     font-weight: 500;
-    color: var(--bs-orange);
+    color: #003ca3;
     padding-top: 30px;
 }
 
@@ -188,7 +291,7 @@ header.abajo{
 }
 
 .card-link {
-    color: var(--bs-orange);
+    color: #003ca3;
     display: block;
     text-align: end;
 }
@@ -199,7 +302,7 @@ header.abajo{
 
 .tarjeta:hover .rounded-wrapper {
     background-color: white;
-    color: var(--bs-orange);
+    color: #003ca3;
 }
 
 .tarjeta:hover h3 {
@@ -211,17 +314,20 @@ header.abajo{
 }
 
 .tarjeta:hover i {
-    color: var(--bs-orange);
+    color: #003ca3;
 }
 
 .tarjeta:hover a {
     color: white;
 }
 
-/* FIN > CSS de TARJETAS de SERVICIOS */
+/* FIN Tarjetas Servicios */
 
 
-/*Seccion "CONTADOR JS" con Fondo/Background de un Video de CABA*/
+/*  ===========================
+    Video - Con CONTADOR EN JS
+    ===========================
+*/
 
 .section-video {
     position: relative;
@@ -230,11 +336,10 @@ header.abajo{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    font-family: 'Poppins';
 }
 
 video{
-    margin: 0;
-    padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
@@ -261,6 +366,8 @@ video{
     position: relative;
     color: white;
     text-shadow: 0 0 5px black;
+    margin: auto;
+    justify-content: center;
 }
 
 .pre-title {
@@ -271,16 +378,21 @@ video{
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--bs-orange);
+    color: rgb(238, 86, 30);
+    margin: auto;
+    text-align: center;
 }
 
 .titulo-numeros {
     font-size: 2rem;
     padding: 15px;
+    margin: auto;
+    text-align: center;
+    font-weight: 200;
 }
 
 .resaltador{
-    background-color: var(--bs-orange);
+    background-color: rgb(238, 86, 30);
 }
 
 .counter-bubble {
@@ -307,8 +419,12 @@ video{
     text-align: center;
     line-height: 40px;
     font-weight: 700;
-    color: var(--bs-orange);
+    color: white;
     padding-bottom: 20px;
+}
+
+.row h4{
+    color: rgb(238, 86, 30);
 }
 
 /* FIN Seccion de CSS del "CONTADOR" JS */
