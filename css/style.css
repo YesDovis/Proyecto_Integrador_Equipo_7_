@@ -495,46 +495,31 @@ video{
 
 /* FIN Seccion de CSS del "CONTADOR" JS */
 
-/* Footer */
-.contact-section .contact-info{
-    flex:0 0 100%;
-    max-width: 100%;
-   }
-   .contact-section .contact-info .info-item{
-       flex:0 0 33.33%;
-       max-width: 33.33%;
-       text-align: center;
-       padding:0 15px;
-       margin-bottom: 40px;
-   }
-   .contact-section .contact-info .info-item h5{
-       font-size: 16px;
-       font-weight: 600;
-       margin:0;
-   }
-   .contact-section .contact-info .info-item p{
-       font-size: 16px;
-       margin:0;
-       color:#555555;
-   }
-   
-   .contact-section .social-links{
+/* Footer */ 
+.social{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    
+}
+
+    .social-links{
        flex:0 0 100%;
-       max-width: 100%;
+       max-width: 5%;
        padding:0 15px;
        text-align: center;
    }
-   .contact-section .social-links a{
+   .social-links {
        text-decoration: none;
        display: inline-block;
        margin:0 5px;
    }
-   .contact-section .social-links a img{
+   .social-links img{
        width: 28px;
        display:block;
        transition: all 0.5s ease;
    }
-   .contact-section .social-links a:hover img{
+   .social-links:hover img{
        opacity:0.5;
    }
    /* copyright */
