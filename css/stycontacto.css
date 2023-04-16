@@ -88,4 +88,23 @@ h3{ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida S
             margin-bottom:10px;
         }
     
-    
+        form {
+            margin-bottom: 20px;
+          }
+          
+          #step-2 {
+            display: none;
+          }
+          
+          #summary {
+            border: 1px solid #ccc;
+            padding: 10px;
+          }
+
+          .h2 {
+            background-color: rgb(235, 24, 24);
+            color: rgb(20, 218, 53);
+            justify-content: center;
+            padding: 20px;
+
+          }
