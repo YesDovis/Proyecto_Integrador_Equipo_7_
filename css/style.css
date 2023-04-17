@@ -106,7 +106,7 @@ header.abajo{
 	opacity: 1;
 }
 
-.contenerdor img{
+.contenedor img{
 	max-width: 100%;
     padding: 0 10px;
     margin: auto;
@@ -182,7 +182,7 @@ header.abajo{
     box-shadow: 5px #666;
    
 }
-
+/*Fin del contenedor banner/*
 
 /*  ===================
     About Us - Nosotros

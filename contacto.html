@@ -20,20 +20,19 @@
 <header>
                     <!---------contenedor M.Navegacion----------------->
                     <div class="cabecera"> 
-                      <a href="" class="logo"><img src="img/logoblanco.svg" alt=""></a>
-                  
+                      <a href="index.html" class="logo"><img src="img/logoblanco.svg" alt=""></a>
                       <nav class="navegacion">
                         <ul class="menu">
-                          <li><a href="./index.html">NOSOTROS</a></li>
+                          <li><a href="./nosotros.html">NOSOTROS</a></li>
                           <li><a href="https://blogdelcontador.com.ar/" target="_blank">BLOG</a></li>
-                          <li><a href="#">Servicios</a>
+                          <li><a href="./index.html#titulo-servicios">Servicios</a></li>
                             <ul class="submenu">
-                              <li><a href="">Laborales</a></li>
-                              <li><a href="">contables</a></li>
-                              <li><a href="">impositivos</a></li>
-                              <li><a href="">auditoria</a></li>
-                              <li><a href="">finanzas</a></li>
-                              <li><a href="">administrativo</a></li>
+                              <li><a class= "submenu1" href="">Laborales</a></li>
+                              <li><a class= "submenu1" href="">contables</a></li>
+                              <li><a class= "submenu1" href="">impositivos</a></li>
+                              <li><a class= "submenu1" href="">auditoria</a></li>
+                              <li><a class= "submenu1" href="">finanzas</a></li>
+                              <li><a class= "submenu1" href="">administrativo</a></li>
                             </ul>
                           </li>
                           <li><a href="#">Contacto</a></li>
@@ -42,18 +41,24 @@
                     </div>
 </header>
 </body>
-<nav>
-  <a href="index.html">volver</a>
-</nav>
+<!--Contenedor Banner-->
+<div class="contenedor_banner">
+  <img src="./img/2.jpg" alt="Banner">
+  <h1 class="titulo1">SERVICIOS CONTABLES</h1>
+  <h4 class="titulo2">Los Profesionales más capacitados siempre a su entera disposición, déjelo todo en nuestras manos.</h4>
+  <button class="btn btn-primary" type="button">¡Quiero saber más!</button> <a href=""></a> 
+  <!--Este boton debe llevar a la página de Nosotros, pero aún no está, por eso no lo linkee-->
+      
+</div>
 <hr>
+<h3>Informacion de Contacto</h3>
 <div class="contenedor">
-  <h3>Informacion de Contacto</h3>
   <p><span class="icon-home2"></span>Esmeralda 123 2 Piso</p>
   <p><a href="#"><span class="icon-phone"></span>0113456 7865</a></p>
   <p><a href="#"><span class="icon-mail"></span>equipo7@gmail.com</a></p>
   <p><a href="#"><span class="icon-facebook2"></span>equipo7@</p>
   <p><a href="#"><span class="icon-whatsapp"></span>+5411345678</a></p>
-
+<!--No se si esto sea necesario, siendo que la info ya está en el footer-->
 </div>  
 
 
@@ -74,13 +79,13 @@
     </datalist><br>
     <input class="comando"type="text" name= "consulta" id="consulta" placeholder="Escriba su consulta"><br>
     <button type="button" class="btn btn-warning">ENVIAR</button>
-
+<!--Este boton me tiene loca, ya que esta como linkeado con el de suscripción, y se antepone en el Banner, y no entiendo porque, le di mil vueltas y no lo pude solucionar-->
 
   </section><br><br><br> <br>
             
   <h3 class="text-success">NUESTROS CLIENTES SATISFECHOS</h3> </div>
   <hr>
-  <h4 class=""> El Estudio Contable Equipo 7 cuenta con una importante cartera de clientes conformada por empresas de primer nivel y de diverentes ramos "(servicios financieros, comerciales, software,etc) las que requieren un asesoramiento dinamico, actualizado, permanente y de alta calidad</h4>
+  <h4 class=""> El Estudio Contable Equipo7 cuenta con una importante cartera de clientes conformada por empresas de primer nivel y de diverentes ramos "(servicios financieros, comerciales, software,etc) las que requieren un asesoramiento dinamico, actualizado, permanente y de alta calidad</h4>
    <hr>
   <div class="conteiner"> 
    <!-- <img class= "alinear" src="/img/Aerolineas.jpg" class="rounded float-start" alt="..."> -->
@@ -92,7 +97,7 @@
  </div>  
 <hr>
  <section class="formulario-2">
-  <h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 60px;">Informese de nuestras ultimas noticias y servicios especiales</h2>
+  <h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y servicios especiales</h2>
   <br>
   <form id="step-1">
     <label for="name">Nombre:</label>
@@ -100,7 +105,8 @@
     
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    <button type="button" id="next-btn" class="btn btn-info">Suscripcion</button>
+    <button type="button" id="next-btn" class="btn btn-info">Suscripción</button>
+    <!--Este boton no aparece sino arriba en el banner donde no pertenece. lo deje comentado. -->
   </form>
 
   <form id="step-2">
@@ -113,8 +119,7 @@
 
 
 <!--ADRI-->
- <div class="contenedor_banner">
-  
+ 
   <p></p>
  </div>
 <!--CLAU-->
@@ -125,9 +130,52 @@
 <div class="contenedor_Servicios">
   <!-- contenido del contenedor aquí -->
 </div>
+<footer>
+  <div class="row">
+    <div class="contact-info">
+      <div class="row">
+        <!-- info item start -->
+        <div class="info-item">
+          <h5>Dirección</h5>
+          <p>Retiro, Buenos Aires, Argentina CP1007</p>
+        </div>
+        <!-- info item end -->
+        <!-- info item start -->
+        <div class="info-item">
+          <h5>Teléfono</h5>
+          <p>+54 1125859569</p>
+        </div>
+        <!-- info item end -->
+        <!-- info item start -->
+        <div class="info-item">
+          <h5>Email</h5>
+          <p>info@equipo7servicioscontables.com</p>
+        </div>
+        <!-- info item end -->
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="social">
+          <nav>
+      <a href="https://www.facebook.com/" target="_blank" class= "social-links" title="facebook"><img src="img/icons/facebook.svg" alt="facebook"></a>
+      <a href="https://twitter.com/" target="_blank" class= "social-links" title="twitter"><img src="img/icons/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/" target="_blank" class= "social-links" title="linkedin"><img src="img/icons/linkedin.svg" alt="linkedin"></a>
+      <a href="https://www.instagram.com/" target="_blank" class= "social-links" title="instagram"><img src="img/icons/instagram.svg" alt="instagram"></a>
+          </nav>
+       </div>
+  </div>
+
+</div>
+</section>
+<!-- Contact Section End -->
+
+<!-- copyright text -->
+<h6 class="copyright">&copy; 2023 Equipo7Contadores - Todos los derechos reservados</h6>
+</footer>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
                   </body>
-<footer class="copyright">&copy; 2023 Equipo7Contadores - Todos los derechos reservados</p></footer>
+
 </html>
