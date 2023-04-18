@@ -22,9 +22,6 @@
     <!--Font Family global <link href="" rel="stylesheet"> -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-    <!--VALIDATE.JS-->
-
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,62 +61,33 @@
         <a href="#" class="banner-button">¡Quiero saber más!</a>
     </div>
 
-    <!--FORMULARIO DE REGISTRACION O CONTACTO-->
+
+    
+    <!--FORMULARIO DE REGISTRACION O CONTACTO: PASARLO PARA QUE SEA DE DOS PASOS + PRINT PDF + API EXTERNA-->
 
     <section class="form-register">
-
         <h3>Formulario de Contacto</h3>
-        <p>A la brevedad nos pondremos en contacto con Ud.</p>
+        <h5>A la brevedad nos pondremos en contacto con Ud.</h5>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Email">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Que servicio le interesa">
+        <datalist id="datalistOptions">
+            <option value="Monotributo">
+            <option value="Ingresos Brutos">
+            <option value="Responsable Inscripto">
+            <option value="Sociedades">
+            <option value="Otros">
+        </datalist><br>
+        <input class="comando" type="text" name="consulta" id="consulta" placeholder="Escriba su consulta"><br>
+        <button type="button" class="btn-warning">ENVIAR</button>
+        <!--Este boton me tiene loca, ya que esta como linkeado con el de suscripción, y se antepone en el Banner, y no entiendo porque, le di mil vueltas y no lo pude solucionar-->
 
-        <form action="#" method="post" class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
-
-            <label for="correo">Correo Electronico:</label>
-            <input type="email" id="email" placeholder="123@email.com" pattern=".+@globex\.com" size="30" required>
-            <br>
-
-            <label for="provincia">Provincia:</label>
-            <select name="select" id="provincia">
-                <option value="value1">Provincia 1</option>
-                <option value="value2" selected>Provincia 2</option>
-                <option value="value3">Provincia 3</option>
-            </select>
-
-            <label for="localidad">Localidad:</label>
-            <select name="select" id="localidad">
-                <option value="value1">Localidad 1</option>
-                <option value="value2" selected>Localidad 2</option>
-                <option value="value3">Localidad 3</option>
-            </select>
-
-            <label for="datalistOptions">Indique el Servicio por el que se contacta:
-                <input list="datalistOptions" name="opciones" />
-            </label>
-            <datalist id="datalistOptions">
-                <option value="Monotributo">
-                <option value="Ingresos Brutos">
-                <option value="Responsable Inscripto">
-                <option value="Sociedades">
-                <option value="Otros">
-            </datalist>
-            <br>
-
-            <label for="consulta">Escriba su consulta:</label>
-            <br>
-            <textarea type="text" name="consulta" id="consulta" rows="4" cols="50"></textarea>
-            <br>
-
-            <input type="submit" value="Enviar">
-
-        </form>
-
-    </section>
+    </section><br><br><br> <br>
 
     <!--FIN FORMULARIO-->
+
+
 
 
     <!--LISTADO CLIENTES a EDITAR-->
@@ -142,11 +110,13 @@
     <!-- FIN DE LISTADO CLIENTES-->
 
 
-    <!--FORMULARIO DE SUSCIPCION - Darle Estilo en el CSS-->
-<!--
+    <!--FORMULARIO DE SUSCIPCION - Darle Estilo en el CSS: PARA HACER LA VALIDACION--> 
+
     <section class="formulario-2">
         <h2>Infórmese de nuestras últimas noticias y servicios especiales</h2>
 
+        <!--<h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y
+            servicios especiales</h2>-->
         <br>
         <form id="step-1">
             <label for="name">Nombre:</label>
@@ -161,13 +131,17 @@
         <form id="step-2">
             <h4>Se le ha enviado un correo a la siguiente direccion: Por favor validar
             </h4>
+
+            <!--<h4 style="color: rgb(180, 9, 18);">Se le ha enviado un correo a la siguiente direccion: Por favor validar
+            </h4>-->
             <div id="summary"></div>
         </form>
+
     </section>
--->
-        <!--<h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y
+
+    <!--<h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y
             servicios especiales</h2>-->
-        <!--<h4 style="color: rgb(180, 9, 18);">Se le ha enviado un correo a la siguiente direccion: Por favor validar
+    <!--<h4 style="color: rgb(180, 9, 18);">Se le ha enviado un correo a la siguiente direccion: Por favor validar
         </h4>-->
 
     <footer>
@@ -214,12 +188,55 @@
 
     </footer>
 
-</body>
 
-<script src="./js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
+
+    <!-- Bootstrap core JavaScript ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js"
+        integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+
+    <!--validate.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.js"
+        integrity="sha512-7lBbuusIAUyaO2heHRa1NjHgSAXvhYau0iv4ZNnvnSN3gwGR6SjA4fHvjP4V6VyWwpOgv8yedI7HT+pg2aVyiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--Script "VALIDACION FORMULARIO"
+    <script>
+
+        window.addEventListener('load', () => {
+            let validadorFormulario = new FormValidator('registrarDatos', [{
+                name: 'nombre',
+                display: 'Nombre',
+                rules: 'required|alpha'
+            },
+            {
+                name: 'correo',
+                display: 'Correo',
+                rules: 'required|valid_email'
+            }], function (errores, evento) {
+                if (errores.length) {
+                    let mensaje = '';
+
+                    errores.forEach(function (campo, indice, arreglo) {
+                        mensaje += `${campo.message} <br/>`;
+                    });
+
+                    document.querySelector('#resultadoValidacion').innerHTML = mensaje;
+                }
+            });
+        });
+
+    </script>
+
+-->
+
 </body>
 
 </html>

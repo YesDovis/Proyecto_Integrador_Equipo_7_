@@ -24,3 +24,5 @@ nextBtn.addEventListener("click", function () {
     step1.style.display = "none";
     step2.style.display = "block";
 });
+
+
