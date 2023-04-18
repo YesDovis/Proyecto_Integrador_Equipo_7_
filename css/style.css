@@ -154,10 +154,10 @@ header{
 
 }
 
-.btn {
-    border: 4px solid #eef4fd;
+.boton-banner {
+    border: 1px solid #003ca3;
     font-weight: 900;
-    color:#003ca3;
+    color:#85a300;
     padding: 2rem 2rem;
     margin-top: 5%rem;
     text-decoration: none;
@@ -169,16 +169,48 @@ header{
 	top:75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-shadow: 0 0 8px rgba(12, 2, 32, 0)
+	text-shadow: 0 0 8px rgba(12, 2, 32, 0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.btn:hover {
+.boton-banner:hover {
     text-align: center;
     color: white;
     background-color: #003ca3;
+    box-shadow: 0 5px #666;
+    
+    /*transform: translateY(4px);*/
+}   
+/*
+.btn:hover {
+    text-align: center;
+    color: white;
+    background-color: #a3a000;
     box-shadow: 5px #666;
    
 }
+/*--------------------------------------------------------------------------*/
+/*
+.boton-banner{
+        border: 1px solid #003ca3;
+        color: #003ca3;
+        padding: 1rem 2rem;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        position: absolute;
+    }
+    
+.boton-banner:hover {
+        color: white;
+        background-color: #003ca3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+}
+*/
+
 /************************Fin del contenedor banner****************/
 
 /*  ===================
