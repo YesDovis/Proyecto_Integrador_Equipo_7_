@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    /*establece el margen (espacio fuera del borde) de todos los elementos en 0.*/
+    padding: 0;
+    /*establece el relleno (espacio dentro del borde) de todos los elementos en 0.*/
+    box-sizing: border-box;
+    /*especifica que el ancho y el alto de un elemento deben incluir el relleno y el borde, pero no el margen.*/
+    /*elimina cualquier subrayado u otras decoraciones de texto en los elementos.*/
+    /*CHEQUIAR TIPOGRAFIA CON EL EQUIPO*/
+}
+
+.form-register {
+    font-family: 'Poppins';
+}
+
+h3 {
+    size: 10cap;
+}
+
+.form-register {
+    width: 750px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 6%;
+}
+
+.form-register p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    ;
+    background-color: #e9e0db;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px;
+}
+
+.comando {
+    width: 100%;
+    height: 150px;
+    background-color: #e9e0db;
+    padding: 10px;
+    border-radius: 14px;
+    position: relative;
+    margin-bottom: 22px;
+    border: 3px;
+}
+
+.form-register .btn {
+    width: 30%;
+    background-color: #e78d06;
+    position: relative;
+    right: 30%;
+    border: none;
+    padding: 10px;
+}
+
+.alinear {
+    width: 250px;
+    height: 250px;
+    margin: 0 5px;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-whit:900px) {
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.alinear {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#step-2 {
+    display: none;
+}
+
+#summary {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.h2 {
+    background-color: rgb(235, 24, 24);
+    color: rgb(20, 218, 53);
+    justify-content: center;
+    padding: 20px;
+
+}

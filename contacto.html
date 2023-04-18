@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Proyecto Integrador Equipo 7</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stycontacto.css">
-    <link rel="stylesheet" href="icon.css">
 
-    <link rel="icon" sizes="16x16" href="img/icono.svg">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!--buscar familia global <link href="" rel="stylesheet"> -->
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="icon" sizes="16x16" href="img/icono.svg" />
+
+    <!--Font Family global <link href="" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!--VALIDATE.JS-->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,60 +64,89 @@
         <a href="#" class="banner-button">¡Quiero saber más!</a>
     </div>
 
-    <hr>
-
     <!--FORMULARIO DE REGISTRACION O CONTACTO-->
 
     <section class="form-register">
-        <h3>Formulario de Contacto</h3>
-        <h5>A la brevedad nos pondremos en contacto con Ud.</h5>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Email">
-        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Que servicio le interesa">
-        <datalist id="datalistOptions">
-            <option value="Monotributo">
-            <option value="Ingresos Brutos">
-            <option value="Responsable Inscripto">
-            <option value="Sociedades">
-            <option value="Otros">
-        </datalist><br>
-        <input class="comando" type="text" name="consulta" id="consulta" placeholder="Escriba su consulta"><br>
-        <button type="button" class="btn btn-warning">ENVIAR</button>
-        <!--Este boton me tiene loca, ya que esta como linkeado con el de suscripción, y se antepone en el Banner, y no entiendo porque, le di mil vueltas y no lo pude solucionar-->
 
-    </section><br><br><br> <br>
+        <h3>Formulario de Contacto</h3>
+        <p>A la brevedad nos pondremos en contacto con Ud.</p>
+
+        <form action="#" method="post" class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
+
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" id="email" placeholder="123@email.com" pattern=".+@globex\.com" size="30" required>
+            <br>
+
+            <label for="provincia">Provincia:</label>
+            <select name="select" id="provincia">
+                <option value="value1">Provincia 1</option>
+                <option value="value2" selected>Provincia 2</option>
+                <option value="value3">Provincia 3</option>
+            </select>
+
+            <label for="localidad">Localidad:</label>
+            <select name="select" id="localidad">
+                <option value="value1">Localidad 1</option>
+                <option value="value2" selected>Localidad 2</option>
+                <option value="value3">Localidad 3</option>
+            </select>
+
+            <label for="datalistOptions">Indique el Servicio por el que se contacta:
+                <input list="datalistOptions" name="opciones" />
+            </label>
+            <datalist id="datalistOptions">
+                <option value="Monotributo">
+                <option value="Ingresos Brutos">
+                <option value="Responsable Inscripto">
+                <option value="Sociedades">
+                <option value="Otros">
+            </datalist>
+            <br>
+
+            <label for="consulta">Escriba su consulta:</label>
+            <br>
+            <textarea type="text" name="consulta" id="consulta" rows="4" cols="50"></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </section>
 
     <!--FIN FORMULARIO-->
 
 
     <!--LISTADO CLIENTES a EDITAR-->
-
+    <!--
     <h3>NUESTROS CLIENTES SATISFECHOS</h3>
     <p> El Estudio Contable Equipo7 cuenta con una importante cartera de clientes conformada por empresas de primer
         nivel y de diverentes ramos "(servicios financieros, comerciales, software,etc) las que requieren un
         asesoramiento dinamico, actualizado, permanente y de alta calidad</p>
 
     <div class="conteiner">
-        <!-- <img class= "alinear" src="/img/Aerolineas.jpg" class="rounded float-start" alt="..."> -->
+        <img class= "alinear" src="/img/Aerolineas.jpg" class="rounded float-start" alt="...">
         <img class="alinear" src="/img/coto.jpg" class="rounded float-end" alt="...">
         <img class="alinear" src="/img/funcion digital.jpg" class="rounded float-start" alt="...">
         <img class="alinear" src="/img/galicia.jpg" class="rounded float-end" alt="...">
         <img class="alinear" src="/img/personal.jpg" class="rounded float-start" alt="...">
         <img class="alinear" src="/img/musimundo.jpg" class="rounded float-end" alt="...">
     </div>
-
+-->
 
     <!-- FIN DE LISTADO CLIENTES-->
 
 
     <!--FORMULARIO DE SUSCIPCION - Darle Estilo en el CSS-->
-
+<!--
     <section class="formulario-2">
         <h2>Infórmese de nuestras últimas noticias y servicios especiales</h2>
 
-        <!--<h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y
-            servicios especiales</h2>-->
         <br>
         <form id="step-1">
             <label for="name">Nombre:</label>
@@ -122,13 +161,14 @@
         <form id="step-2">
             <h4>Se le ha enviado un correo a la siguiente direccion: Por favor validar
             </h4>
-
-            <!--<h4 style="color: rgb(180, 9, 18);">Se le ha enviado un correo a la siguiente direccion: Por favor validar
-            </h4>-->
             <div id="summary"></div>
         </form>
-
     </section>
+-->
+        <!--<h2 style="color:rgb(71, 13, 233);font-family: Arial; font-size: 40px;">Infórmese de nuestras últimas noticias y
+            servicios especiales</h2>-->
+        <!--<h4 style="color: rgb(180, 9, 18);">Se le ha enviado un correo a la siguiente direccion: Por favor validar
+        </h4>-->
 
     <footer>
 
@@ -152,7 +192,6 @@
             </div>
             <!-- info item end -->
         </div>
-
 
         <div class="redes-sociales">
             <div>
