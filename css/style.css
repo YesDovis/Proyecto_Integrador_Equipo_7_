@@ -4,6 +4,7 @@
  #146C94    azul header (button)
  #CE7D35    naranja
 */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 
@@ -21,7 +22,6 @@
 body {
     background: #ffffff;
     /*establece el color de fondo del elemento del cuerpo //CHEQUIAR FONDO CON EL EQUIPO*/
-
 }
 
 .Contenedor.cabecera {
@@ -68,7 +68,6 @@ header {
     list-style: none;
     padding: 0 10px;
 }
-
 
 .menu>li {
     position: relative;
@@ -198,6 +197,7 @@ header {
 
 
 /************************Fin del contenedor banner****************/
+
 
 /*  =========================================================
     About Us - Nosotros
