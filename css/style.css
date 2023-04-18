@@ -34,7 +34,8 @@ body {
 header {
     width: 100%;
     height: 90px;
-    background-color: #146C94;
+    /*background-color: #146C94;*/
+    background-color: #003ca3;
     float: right;
     /*pum a la derecha*/
 }
@@ -78,7 +79,8 @@ header {
     display: block;
     padding: 17px 20px;
     color: #ffffff;
-    font-family: 'Open sans';
+    /*font-family: 'Open sans';*/
+    font-family: 'Poppins';
     text-decoration: none;
     text-transform: uppercase;
     /*texto en mayuscula*/
@@ -122,7 +124,8 @@ header {
     max-width: 100%;
     padding: 0 10px;
     margin: auto;
-    background: #146C94;
+    /*background: #146C94;*/
+    background: #003ca3;
 }
 
 /******************************************the end headrer+nav**********************************/
@@ -439,7 +442,6 @@ video {
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(238, 86, 30);
-    margin: auto;
     text-align: center;
 }
 
