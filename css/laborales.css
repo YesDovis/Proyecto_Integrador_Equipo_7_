@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    /*establece el margen (espacio fuera del borde) de todos los elementos en 0.*/
+    padding: 0;
+    /*establece el relleno (espacio dentro del borde) de todos los elementos en 0.*/
+    box-sizing: border-box;
+    /*especifica que el ancho y el alto de un elemento deben incluir el relleno y el borde, pero no el margen.*/
+    text-decoration: none;
+    /*elimina subrayado */
+}
+
+body {
+    background: #ffffff;
+    /*establece el color de fondo del elemento del cuerpo //CHEQUIAR FONDO CON EL EQUIPO*/
+}
+
+.Contenedor.cabecera {
+    /*< modificacion 2*/
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    /*background-color: #146C94;*/
+    background-color: #003ca3;
+    float: right;
+    /*pum a la derecha*/
+}
+
+.logo {
+    float: left;
+    /*logo a la izquierda*/
+    padding: 5px 30px 0;
+    /*padding de 5px en la parte superior, 10pxa la derecha y 0en la parte inferior.*/
+}
+
+.logo img {
+    height: 130px;
+    /*tamañologo*/
+}
+
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.navegacion {
+    float: right;
+    width: auto;
+    margin: 30px auto;
+
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 17px 20px;
+    color: #ffffff;
+    /*font-family: 'Open sans';*/
+    font-family: 'Poppins';
+    text-decoration: none;
+    text-transform: uppercase;
+    /*texto en mayuscula*/
+}
+
+.menu li a:hover {
+    color: #CE7D35;
+    transition: all .3s;
+}
+
+/********************* Submenu*****************/
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 145%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 3;
+    /****** correc 2 submenu sobre banner-*/
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contenedor img {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    /*background: #146C94;*/
+    background: #003ca3;
+}
+
+/******************************************the end headrer+nav**********************************/
+
+/********************************* contenedor del banner***************************/
+
+.contenedor_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor_banner img {
+    width: 100%;
+    height: 450px;
+
+}
+
+.banner-caption{
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: 'Poppins';
+    margin: 20px;
+}
+
+.contenedor_banner h1 {
+    font-size: 5vw;
+    font-style: bold;
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgb(0, 0, 0, 1.5);
+}
+
+.banner-button {
+    color: white;
+    background-color: #003ca3;
+    border: 1px solid #003ca3;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    font-size: 1vw;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0)
+}
+
+.banner-button:hover {
+    color: #003ca3;
+    background-color: white;
+    box-shadow: 0 3px #666;
+}
+
+
+/**Fin del contenedor banner***********************************************************/
+
+/*conf logo en movimiento************************************************************/
+
+.contenedor_ {
+    width: 100%;
+    height: 50%;
+    background-color: #bbbbbb;
+    display: flex;
+}
+
+/*texto*/
+
+.caja1 .text1 p {
+    font-size: 20px;
+    margin: 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    justify-content: space-between;
+    float: left;
+    /*background-color: #CE7D35;*/
+}
+
+.caja1 .text2 p {
+    font-size: 20px;
+    margin: 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    justify-content: space-between;
+    float: right;
+    /*background-color: #003ca3;*/
+}
+/*ANIMACION DE 4 SEGUNDOS CON REBOTE CONTINUO*/
+.contenedor-ani {
+    display:flex;
+}
+.contenedor-ani .svg img{
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    animation: move-vector 4s linear infinite;
+    /*background-color: green;*/
+}
+
+@keyframes move-vector {  /*movimiento haci abajo*/
+    0%{
+        transform: translateY(15px);} /*movimiento en cordenada vertical de 15px*/
+        50%{
+            transform: translateY(0px);} /*neutro de x*/
+            100%{
+                transform: translateY(15px);} /*moviento cort-v-15px*/
+}
+
+/* Footer **************************************/
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    margin-top: 30px;
+}
+
+
+.contact-info div {
+    flex: 1 1 30%;
+    height: 100px;
+    padding: 30px 10px;
+}
+
+.contact-section .contact-info .info-item h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-section .contact-info .info-item p {
+    font-size: 18px;
+    margin: 0;
+    color: #555555;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 10px 80px 10px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links img {
+    width: 28px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    margin: 10px;
+
+}
+
+.social-links img:hover {
+    opacity: 0.5;
+}
+
+.copyright {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-top:1px solid #b3b3b3;
+    max-width: 100%;
+}
+
+/* copyright */
