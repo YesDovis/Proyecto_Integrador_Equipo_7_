@@ -182,9 +182,9 @@ header {
 
 .contenedor_ {
     width: 100%;
-    height: 50%;
+    height: 600px;
     background-color: #bbbbbb;
-    display: flex;
+    display: grid;
 }
 
 /*texto*/
@@ -196,7 +196,6 @@ header {
     color: #000000;
     text-align: center;
     justify-content: space-between;
-    float: left;
     /*background-color: #CE7D35;*/
 }
 
@@ -206,19 +205,18 @@ header {
     padding: 0;
     color: #000000;
     text-align: center;
-    justify-content: space-between;
-    float: right;
+    justify-content: center;
     /*background-color: #003ca3;*/
 }
 /*ANIMACION DE 4 SEGUNDOS CON REBOTE CONTINUO*/
-.contenedor-ani {
-    display:flex;
-}
+/*.contenedor-ani {
+    /*display:grid;*/
+
 .contenedor-ani .svg img{
-    width: 500px;
+    width: 30%;
+    height: 500px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     animation: move-vector 4s linear infinite;
     /*background-color: green;*/
 }
@@ -249,12 +247,14 @@ header {
     flex: 1 1 30%;
     height: 100px;
     padding: 30px 10px;
+
 }
 
 .contact-section .contact-info .info-item h5 {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
+
 }
 
 .contact-section .contact-info .info-item p {
